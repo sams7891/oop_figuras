@@ -17,4 +17,11 @@ public class Trijsturis {
 				+ "Mala2: " + mala2 + "cm\n"
 				+ "Mala3: " + mala3 + "cm\n";
 	}
+	
+	//Uztaisīt metodi laukuma aprēķiniem
+	public double tLaukums() {
+		double p = (mala1 + mala2 + mala3) / 2;
+		double s = Math.sqrt(p * (p - mala1) * (p - mala2) * (p - mala3));
+		return Math.round(s * 100.0) / 100.0;
+	}
 }
