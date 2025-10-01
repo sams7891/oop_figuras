@@ -21,7 +21,7 @@ public class Cetrsturis {
 	
 	//Uztaisīt metodi kas aprēkina laukumu
 	
-	public double rekinat(double platums, double augstums) {
+	public double rekinat() {
 		return platums * augstums;
 	}
 }

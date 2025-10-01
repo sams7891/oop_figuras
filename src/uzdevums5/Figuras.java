@@ -98,6 +98,25 @@ public class Figuras {
 					JOptionPane.showMessageDialog(null, IzveidotieObjekti.izvaditTrijsturi(trijsturaObjekti), "Trijstūris objekti", JOptionPane.PLAIN_MESSAGE);
 					break;
 				}
+			case 3:
+				poga = JOptionPane.showOptionDialog(null, "Kurai figūrai izsaukt metodi?", "Izvēle", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE, null, objektuPogas, objektuPogas[0]);
+				
+				if(poga == 0 && centraObjekti.size()<1){
+					JOptionPane.showMessageDialog(null, "Nav neviens centra punkts!", "Brīdinājums", JOptionPane.WARNING_MESSAGE);
+					break;
+					
+				}else if (poga == 1 && cetrsturaObjekti.size()<1){
+					JOptionPane.showMessageDialog(null, "Nav neviens četrstūris punkts!", "Brīdinājums", JOptionPane.WARNING_MESSAGE);
+					break;
+					
+				}else if (poga == 2 && aplaObjekti.size()<1){
+						JOptionPane.showMessageDialog(null, "Nav neviens aplis!", "Brīdinājums", JOptionPane.WARNING_MESSAGE);
+						break;
+				}else if (poga == -1 || poga == 4) {
+					break;
+				}
+				
+				OMetIzs.izsauktMetodi(poga);
 				break;
 			}
 		}while(izvele != 0);

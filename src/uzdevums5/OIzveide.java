@@ -16,6 +16,33 @@ public class OIzveide {
 		return izvele;
 	}
 	
+	static int cetIzvele() {
+		if(Figuras.cetrsturaObjekti.size() < 1)
+			return -1;
+		
+		int izvele = MinkuTante.skaitlaParbaude(IzveidotieObjekti.izvaditCetrsturi(Figuras.cetrsturaObjekti), 0, Figuras.cetrsturaObjekti.size() - 1);
+		
+		return izvele;
+	}
+	
+	static int aplIzvele() {
+		if(Figuras.aplaObjekti.size() < 1)
+			return -1;
+		
+		int izvele = MinkuTante.skaitlaParbaude(IzveidotieObjekti.izvaditAplis(Figuras.aplaObjekti), 0, Figuras.aplaObjekti.size() - 1);
+		
+		return izvele;
+	}
+	
+	static int triIzvele() {
+		if(Figuras.trijsturaObjekti.size() < 1)
+			return -1;
+		
+		int izvele = MinkuTante.skaitlaParbaude(IzveidotieObjekti.izvaditTrijsturi(Figuras.trijsturaObjekti), 0, Figuras.trijsturaObjekti.size() - 1);
+		
+		return izvele;
+	}
+	
 	public static void izveidotObjektu() {
 		int x, y, cPNr;
 		double p, a;
